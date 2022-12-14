@@ -1,0 +1,30 @@
+main:
+	addi $s0, $zero, 1000
+	addi $s1, $zero, 2500
+	addi $t0, $zero, 1
+	addi $t1, $zero, 2
+	addi $t2, $zero, 3
+	addi $t3, $zero, 4
+
+	sw $t0, 0($s0)	#store 1 at location 1000
+    lw $t2, 0($s0)
+    addi $t4, $zero, 1
+    addi $t5, $zero, 1
+    addi $t7, $zero, 1
+    addi $t8, $zero, 1
+	addi $t9, $zero, 1
+	addi $s3, $zero, 1
+	add $s5, $s2, $s1
+	add $s6, $s2, $s1
+	add $s1, $s2, $s1
+	add $s7, $s2, $s1
+	add $s8, $s2, $s1
+	add $s2, $s2, $s1
+	add $s4, $s2, $s1
+	add $s5, $s2, $s1
+	addi $s4, $zero, 1
+	addi $t2, $zero, 5
+	addi $s5, $zero, 1
+    
+    
+exit:

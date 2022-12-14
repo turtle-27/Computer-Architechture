@@ -1,0 +1,5 @@
+Instruction executed in core 1: 25
+
+Total buffer update: 2
+
+Total no. of instruction executed: 25

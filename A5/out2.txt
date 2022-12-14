@@ -1,0 +1,30 @@
+cycle 1: Instruction: addi $s0, $zero, 1000 => $s0 = 1000
+cycle 2: Instruction: addi $s1, $zero, 2500 => $s1 = 2500
+cycle 3: Instruction: addi $t0, $zero, 1 => $t0 = 1
+cycle 4: Instruction: addi $t1, $zero, 2 => $t1 = 2
+cycle 5: Instruction: addi $t2, $zero, 3 => $t2 = 3
+cycle 6: Instruction: addi $t3, $zero, 4 => $t3 = 4
+cycle 7: Instruction: sw $t0, 0($s0) (DRAM request Queued)
+cycle 8: Instruction: sw $t1, 0($s1) (DRAM request Queued)
+cycle 9: Instruction: sw $t2, 4($s0) (DRAM request Queued)
+cycle 10: Instruction: sw $t3, 4($s1) (DRAM request Queued)
+cycle 11: Instruction: lw $t5, 0($s0) (DRAM request Queued)
+cycle 12: Instruction: lw $t6, 0($s1) (DRAM request Queued)
+cycle 13: Instruction: lw $t7, 4($s0) (DRAM request Queued)
+cycle 14: Instruction: lw $t8, 4($s1) (DRAM request Queued)
+cycle 68: sw $t0 initiated
+cycle 89: Column Access => memory address 210712-210715 = 1
+cycle 92: sw $t2 initiated
+cycle 93: Column Access => memory address 210716-210719 = 3
+cycle 96: lw $t5 initiated
+cycle 97: Column Access => $t5 = 1
+cycle 100: lw $t7 initiated
+cycle 101: Column Access => $t7 = 3
+cycle 176: sw $t1 initiated
+cycle 197: Column Access => memory address 212212-212215 = 2
+cycle 200: sw $t3 initiated
+cycle 201: Column Access => memory address 212216-212219 = 4
+cycle 204: lw $t6 initiated
+cycle 205: Column Access => $t6 = 2
+cycle 208: lw $t8 initiated
+cycle 209: Column Access => $t8 = 4

@@ -1,0 +1,21 @@
+cycle 1: Instruction: addi $s0, $zero, 1000 => $s0 = 1000
+cycle 2: Instruction: addi $s1, $zero, 2500 => $s1 = 2500
+cycle 3: Instruction: addi $t0, $zero, 1 => $t0 = 1
+cycle 4: Instruction: sw $t0, 0($s1) (DRAM request Queued)
+cycle 5: Instruction: lw $t2, 0($s1) (DRAM request Queued)
+cycle 6: sw $t0 initiated
+cycle 6: Instruction: sw $t0, 4($s1) (DRAM request Queued)
+cycle 7: Instruction: lw $t3, 4($s1) (DRAM request Queued)
+cycle 8: Instruction: add $t4, $t3, $t2 (Queued)
+cycle 17: Column Access => memory address 631636-631639 = 1
+cycle 20: lw $t2 initiated
+cycle 21: Column Access => $t2 = 1
+cycle 24: sw $t0 initiated
+cycle 25: Column Access => memory address 631640-631643 = 1
+cycle 28: lw $t3 initiated
+cycle 29: Column Access => $t3 = 1
+cycle 30: Instruction: add $t4, $t3, $t2 => $t4 = 2
+cycle 31: Instruction: addi $t1, $zero, 2 => $t1 = 2
+cycle 32: Instruction: addi $t3, $t2, 10 => $t3 = 11
+cycle 33: Instruction: addi $t2, $zero, 3 => $t2 = 3
+cycle 34: Instruction: addi $t3, $zero, 4 => $t3 = 4

@@ -1,0 +1,6 @@
+cycle 1: Instruction: addi $t0, $zero, 1000 => $t0 = 1000
+cycle 2: Instruction: addi $t1, $zero, 2500 => $t1 = 2500
+cycle 3: Instruction: addi $s0, $zero, 1 => $s0 = 1
+cycle 4: Instruction: addi $s5, $zero, 2 => $s5 = 2
+cycle 5: Instruction: addi $s6, $zero, 3 => $s6 = 3
+cycle 6: Instruction: addi $s7, $zero, 4 => $s7 = 4
